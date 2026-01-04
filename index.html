@@ -15,64 +15,248 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <header>
       <img src="images/myphoto.jpeg" alt="Middwin's photo" class="profile">
-      <h1>Hello, I'm Middwin</h1>
-      <p>Aspiring Full Stack Developer | Finance Analyst</p>
+      <h1>Hello, I'm Middwin Antony</h1>
+      <p>Full-Stack Software Developer & Data Analyst</p>
+      <p class="location">Montreal, QC, Canada</p>
       <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
     </header>
 
     <section id="about">
       <h2>About Me</h2>
-      <p>I am an aspiring Full Stack Developer, currently learning AI and Web Development at Le Wagon.
-        With a background in finance and product management, I bring analytical skills and
-        creativity into building scalable solutions. My goal is to merge finance with technology
-        to create impactful products.</p>
+      <p>Full-Stack Software Developer & Data Analyst with experience delivering measurable results across financial analysis, dashboard automation, and application development. Built 4 end-to-end full-stack applications, including AI-powered tools and geolocation-based platforms. Skilled in Python, SQL, Ruby on Rails, Machine Learning, and APIs (Stripe, Mapbox, OpenAI), with a strong ability to bridge business strategy and technical execution.</p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill-item">HTML</div>
-        <div class="skill-item">CSS</div>
-        <div class="skill-item">JavaScript</div>
-        <div class="skill-item">Ruby on Rails</div>
-        <div class="skill-item">Python</div>
-        <div class="skill-item">SQL</div>
-        <div class="skill-item">Git/GitHub</div>
+
+      <div class="skill-category">
+        <h3>Languages & Frameworks</h3>
+        <div class="skills-container">
+          <div class="skill-item">Python</div>
+          <div class="skill-item">Ruby on Rails</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">HTML/CSS</div>
+          <div class="skill-item">Stimulus</div>
+          <div class="skill-item">Bootstrap</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Web & APIs</h3>
+        <div class="skills-container">
+          <div class="skill-item">REST APIs</div>
+          <div class="skill-item">Stripe</div>
+          <div class="skill-item">Mapbox</div>
+          <div class="skill-item">OpenAI</div>
+          <div class="skill-item">Google Maps API</div>
+          <div class="skill-item">Geocoder</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Database & Tools</h3>
+        <div class="skills-container">
+          <div class="skill-item">PostgreSQL</div>
+          <div class="skill-item">Active Record</div>
+          <div class="skill-item">Git/GitHub</div>
+          <div class="skill-item">Heroku</div>
+          <div class="skill-item">Cloudinary</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Concepts & Patterns</h3>
+        <div class="skills-container">
+          <div class="skill-item">MVC</div>
+          <div class="skill-item">OOP</div>
+          <div class="skill-item">CRUD</div>
+          <div class="skill-item">Authentication (Devise)</div>
+          <div class="skill-item">Authorization (Pundit)</div>
+          <div class="skill-item">Turbo Streams</div>
+          <div class="skill-item">WebSockets</div>
+          <div class="skill-item">Data Structures & Algorithms</div>
+          <div class="skill-item">Machine Learning</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Soft Skills</h3>
+        <div class="skills-container">
+          <div class="skill-item">Problem Solving</div>
+          <div class="skill-item">Leadership</div>
+          <div class="skill-item">Technical Aptitude</div>
+          <div class="skill-item">Communication</div>
+          <div class="skill-item">French (B2)</div>
+        </div>
       </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
+
       <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal website showcasing my work. Built with HTML, CSS, and JavaScript.</p>
-        <a href="#">View Project</a>
+        <h3>TreGo – Full-Stack Developer</h3>
+        <p class="project-type">Personal Project</p>
+        <ul>
+          <li>Ride-sharing platform with real-time location tracking and booking flow</li>
+          <li>Integrated Stripe for secure payments & Mapbox for routing</li>
+          <li>Built trip history, driver/rider UX, and UI</li>
+          <li><strong>Stack:</strong> Ruby on Rails, JavaScript, PostgreSQL, Stripe, Mapbox</li>
+        </ul>
+        <a href="https://github.com/middwinantony/trego" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
       </div>
+
       <div class="project">
-        <h3>Finance Dashboard</h3>
-        <p>Data visualization tool for financial KPIs. Built with Python, Pandas, and Plotly.</p>
-        <a href="#">GitHub Repo</a>
+        <h3>BabyHugs – Full-Stack Developer</h3>
+        <p class="project-type">Personal Project</p>
+        <ul>
+          <li>Two-sided marketplace for used baby products</li>
+          <li>Implemented search filters, inventory, and messaging logic</li>
+          <li>Designed database for offers, purchases, and user profiles</li>
+          <li><strong>Stack:</strong> Ruby on Rails, PostgreSQL, Bootstrap</li>
+        </ul>
+        <a href="https://github.com/middwinantony/calid_de_bebe" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>FriendFusion – Lead Developer</h3>
+        <p class="project-type">Le Wagon Team Project</p>
+        <ul>
+          <li>Built social platform enabling event creation, language matching, and real-time chat</li>
+          <li>Integrated AI to summarize chat conversations for faster engagement</li>
+          <li>Implemented WebSockets and ActionCable for live messaging</li>
+          <li><strong>Stack:</strong> Ruby on Rails, PostgreSQL, JavaScript, WebSockets, OpenAI API</li>
+        </ul>
+        <a href="https://www.friendfusion.online/" target="_blank" class="project-link">
+          <i class="fas fa-external-link-alt"></i> View Live Site
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>AI StudyBuddy – AI Engineer</h3>
+        <p class="project-type">Le Wagon Project</p>
+        <ul>
+          <li>Developed AI-generated quizzes and automatic grading based on user answers</li>
+          <li>Engineered prompt logic for topic-specific question generation</li>
+          <li>Enabled session history & progress tracking</li>
+        </ul>
+        <a href="https://github.com/middwinantony/-Studybuddy" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="project">
+        <h3>IIIT - Capstone Project - Stock Market Analysis and Portfolio Management</h3>
+        <p class="project-type">IIIT • August 2021 - November 2021</p>
+        <ul>
+          <li>Analyzed stock trends using technical analysis, focusing on risk and return metrics</li>
+          <li>Compared performance of selected securities against S&P 500 index</li>
+          <li>Applied Capital Asset Pricing Model (CAPM) to validate stock selections</li>
+          <li>Implemented predictive models to estimate portfolio returns</li>
+        </ul>
       </div>
     </section>
 
     <section id="experience">
-      <h2>Experience & Education</h2>
-      <p><strong>Financial Analyst</strong> – 6+ years experience in data-driven decision-making.</p>
-      <p><strong>Le Wagon Full Stack Bootcamp</strong> – Ongoing (2025).</p>
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <h3>Options Trader and Market Analyst</h3>
+        <p class="company">Freelance</p>
+        <p class="date">November 2021 - Present</p>
+        <ul>
+          <li>Developed comprehensive trading plans by incorporating real-time data, news, and economic indicators, adapting approaches to changing market conditions for consistent portfolio growth</li>
+          <li>Synthesized complex options pricing models and historical data to formulate risk-mitigated trading strategies aligned with shifting market volatility and liquidity patterns</li>
+          <li>Integrated statistical analysis and custom-built algorithms to backtest and validate trading hypotheses, refining execution strategies in response to evolving market dynamics</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Analyst (Outsourced)</h3>
+        <p class="company">The Ekalaya Closet, India</p>
+        <p class="date">November 2021 - October 2022</p>
+        <ul>
+          <li>Spearheaded financial analysis initiatives, resulting in a 15% boost in profitability through data-driven insights and strategic recommendations to C-suite executives</li>
+          <li>Developed and implemented a comprehensive financial dashboard, improving operational efficiency by 21% and enabling real-time decision-making across departments</li>
+          <li>Consolidated cross-functional financial data from multiple sources to streamline monthly reporting processes, equipping leadership with timely insights for enhanced resource allocation</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Co-founder</h3>
+        <p class="company">The Ekalaya Closet, India</p>
+        <p class="date">January 2019 - October 2020</p>
+        <ul>
+          <li>Co-founded an ethical marketplace enabling handmade artisans to sell directly at fair prices and earn sustainable income without middlemen</li>
+          <li>Built partnerships with 82 retail outlets in Bangalore, displaying artisan products and significantly expanding visibility, reach, and sales</li>
+          <li>Oversaw business operations, pricing, and financial planning to grow profitability while supporting artisan communities through affordable access to local markets</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Analyst Lead</h3>
+        <p class="company">ServeAces Technologies, India</p>
+        <p class="date">September 2015 - November 2018</p>
+        <ul>
+          <li>Managed financial aspects of 1-2 million budget projects, performing cost-benefit analysis and financial forecasting to ensure optimal resource allocation and ROI</li>
+          <li>Developed data-driven financial models to support product pricing strategies, resulting in a 9% increase in profit margins across the product portfolio</li>
+          <li>Directed cross-functional analytical initiatives by leveraging advanced statistical techniques and business intelligence tools to identify trends, inform executive decisions, and drive comprehensive process improvements</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <h3>AI Software Development Bootcamp</h3>
+        <p class="school">Le Wagon - AI • Montreal, Canada</p>
+        <p class="date">2025</p>
+        <ul>
+          <li>5-month intensive bootcamp focused on AI engineering, backend development, and deployment</li>
+          <li>Built and deployed AI-powered applications using Python, ML frameworks, APIs, and cloud tools</li>
+          <li>Hands-on experience with data pipelines, model training, evaluation, and productionization</li>
+          <li>Collaborated in agile teams on real-world, end-to-end projects</li>
+        </ul>
+      </div>
+
+      <div class="education-item">
+        <h3>Post Graduate Diploma in Data Science and Analytics</h3>
+        <p class="school">IIIT - Bangalore, India</p>
+        <p class="date">2021</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Bachelor of Technology: Mechanical Engineering</h3>
+        <p class="school">Jawaharlal Nehru National College of Engineering, India</p>
+        <p class="date">2012</p>
+      </div>
+
+      <div class="education-item">
+        <h3>French Language - Level B2</h3>
+        <p class="school">Cégep du Vieux Montréal</p>
+        <p class="date">2024</p>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <div class="contact-container">
-        <a href="mailto:middwin@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+        <a href="mailto:middwin@gmail.com"><i class="fa fa-envelope"></i> middwin@gmail.com</a>
+        <a href="tel:+14384660214"><i class="fa fa-phone"></i> (438) 466-0214</a>
         <a href="https://www.linkedin.com/in/middwin-antony-373263229/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://github.com/middwinantony" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://twitter.com/middwin" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
       </div>
     </section>
 

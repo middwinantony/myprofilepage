@@ -28,7 +28,8 @@ header {
   padding: 3rem 1rem;
 }
 header h1 { margin: 0; font-size: 2.5rem; }
-header p { font-size: 1.2rem; }
+header p { font-size: 1.2rem; margin: 0.5rem 0; }
+header .location { font-size: 1rem; color: #cbd5e1; }
 section {
   max-width: 900px;
   margin: 2rem auto;
@@ -53,10 +54,85 @@ h2 {
   color: #1e293b;
   font-weight: bold;
 }
-.project {
-  margin-bottom: 1.5rem;
+.skill-category {
+  margin-bottom: 2rem;
 }
-.project h3 { margin: 0; }
+.skill-category h3 {
+  color: #1e293b;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+.project {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.project h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+}
+.project-type {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+}
+.project ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.project li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.project-link:hover {
+  background: #1d4ed8;
+}
+
+.experience-item, .education-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.experience-item h3, .education-item h3 {
+  margin: 0 0 0.3rem 0;
+  color: #1e293b;
+}
+.company, .school {
+  color: #64748b;
+  font-weight: 600;
+  margin: 0.2rem 0;
+}
+.date {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0.5rem 0;
+}
+.experience-item ul, .education-item ul {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+.experience-item li, .education-item li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
 footer {
   text-align: center;
   padding: 1rem;

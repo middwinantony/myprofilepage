@@ -1,268 +1,379 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Middwin | Profile</title>
+    <title>Middwin Antony | Full-Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
 
   <body>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-logo">MA</div>
+        <button class="menu-button" id="menu-button" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
     </nav>
 
-    <header>
-      <img src="images/myphoto.jpeg" alt="Middwin's photo" class="profile">
-      <h1>Hello, I'm Middwin Antony</h1>
-      <p>Full-Stack Software Developer & Data Analyst</p>
-      <p class="location">Montreal, QC, Canada</p>
-      <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-image-container">
+          <img src="images/myphoto.jpeg" alt="Middwin Antony" class="hero-image">
+        </div>
+        <h1 class="hero-title">Middwin Antony</h1>
+        <p class="hero-subtitle">Full-Stack Software Developer & Data Analyst</p>
+        <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Montreal, QC, Canada</p>
+        <a href="mailto:middwin@gmail.com" class="hero-cta">Get in Touch</a>
+      </div>
     </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Full-Stack Software Developer & Data Analyst with experience delivering measurable results across financial analysis, dashboard automation, and application development. Built 4 end-to-end full-stack applications, including AI-powered tools and geolocation-based platforms. Skilled in Python, SQL, Ruby on Rails, Machine Learning, and APIs (Stripe, Mapbox, OpenAI), with a strong ability to bridge business strategy and technical execution.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-
-      <div class="skill-category">
-        <h3>Languages & Frameworks</h3>
-        <div class="skills-container">
-          <div class="skill-item">Python</div>
-          <div class="skill-item">Ruby on Rails</div>
-          <div class="skill-item">JavaScript</div>
-          <div class="skill-item">SQL</div>
-          <div class="skill-item">HTML/CSS</div>
-          <div class="skill-item">Stimulus</div>
-          <div class="skill-item">Bootstrap</div>
+    <!-- Main Content -->
+    <main class="container">
+      <!-- About Section -->
+      <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
+          <p class="about-text">Full-Stack Software Developer & Data Analyst with experience delivering measurable results across financial analysis, dashboard automation, and application development. Built 4 end-to-end full-stack applications, including AI-powered tools and geolocation-based platforms. Skilled in Python, SQL, Ruby on Rails, Machine Learning, and APIs (Stripe, Mapbox, OpenAI), with a strong ability to bridge business strategy and technical execution.</p>
         </div>
-      </div>
+      </section>
 
-      <div class="skill-category">
-        <h3>Web & APIs</h3>
-        <div class="skills-container">
-          <div class="skill-item">REST APIs</div>
-          <div class="skill-item">Stripe</div>
-          <div class="skill-item">Mapbox</div>
-          <div class="skill-item">OpenAI</div>
-          <div class="skill-item">Google Maps API</div>
-          <div class="skill-item">Geocoder</div>
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-content">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Options Trader and Market Analyst</h3>
+              <span class="timeline-company">Freelance</span>
+              <span class="timeline-date">November 2021 - Present</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Developed comprehensive trading plans by incorporating real-time data, news, and economic indicators, adapting approaches to changing market conditions for consistent portfolio growth</li>
+              <li>Synthesized complex options pricing models and historical data to formulate risk-mitigated trading strategies aligned with shifting market volatility and liquidity patterns</li>
+              <li>Integrated statistical analysis and custom-built algorithms to backtest and validate trading hypotheses, refining execution strategies in response to evolving market dynamics</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Analyst (Outsourced)</h3>
+              <span class="timeline-company">The Ekalaya Closet, India</span>
+              <span class="timeline-date">November 2021 - October 2022</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Spearheaded financial analysis initiatives, resulting in a 15% boost in profitability through data-driven insights and strategic recommendations to C-suite executives</li>
+              <li>Developed and implemented a comprehensive financial dashboard, improving operational efficiency by 21% and enabling real-time decision-making across departments</li>
+              <li>Consolidated cross-functional financial data from multiple sources to streamline monthly reporting processes, equipping leadership with timely insights for enhanced resource allocation</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Co-founder</h3>
+              <span class="timeline-company">The Ekalaya Closet, India</span>
+              <span class="timeline-date">January 2019 - October 2020</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Co-founded an ethical marketplace enabling handmade artisans to sell directly at fair prices and earn sustainable income without middlemen</li>
+              <li>Built partnerships with 82 retail outlets in Bangalore, displaying artisan products and significantly expanding visibility, reach, and sales</li>
+              <li>Oversaw business operations, pricing, and financial planning to grow profitability while supporting artisan communities through affordable access to local markets</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <h3>Analyst Lead</h3>
+              <span class="timeline-company">ServeAces Technologies, India</span>
+              <span class="timeline-date">September 2015 - November 2018</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Managed financial aspects of 1-2 million budget projects, performing cost-benefit analysis and financial forecasting to ensure optimal resource allocation and ROI</li>
+              <li>Developed data-driven financial models to support product pricing strategies, resulting in a 9% increase in profit margins across the product portfolio</li>
+              <li>Directed cross-functional analytical initiatives by leveraging advanced statistical techniques and business intelligence tools to identify trends, inform executive decisions, and drive comprehensive process improvements</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="skill-category">
-        <h3>Database & Tools</h3>
-        <div class="skills-container">
-          <div class="skill-item">PostgreSQL</div>
-          <div class="skill-item">Active Record</div>
-          <div class="skill-item">Git/GitHub</div>
-          <div class="skill-item">Heroku</div>
-          <div class="skill-item">Cloudinary</div>
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-content">
+          <div class="project-card">
+            <h3>TreGo</h3>
+            <p class="project-meta">Personal Project • Full-Stack Developer</p>
+            <ul class="project-highlights">
+              <li>Ride-sharing platform with real-time location tracking and booking flow</li>
+              <li>Integrated Stripe for secure payments & Mapbox for routing</li>
+              <li>Built trip history, driver/rider UX, and UI</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Ruby on Rails</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">Mapbox</span>
+            </div>
+            <a href="https://github.com/middwinantony/trego" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Source
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>FriendFusion</h3>
+            <p class="project-meta">Le Wagon Team Project • Lead Developer</p>
+            <ul class="project-highlights">
+              <li>Built social platform enabling event creation, language matching, and real-time chat</li>
+              <li>Integrated AI to summarize chat conversations for faster engagement</li>
+              <li>Implemented WebSockets and ActionCable for live messaging</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Ruby on Rails</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">OpenAI API</span>
+            </div>
+            <a href="https://www.friendfusion.online/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> View Live Site
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>BabyHugs</h3>
+            <p class="project-meta">Personal Project • Full-Stack Developer</p>
+            <ul class="project-highlights">
+              <li>Two-sided marketplace for used baby products</li>
+              <li>Implemented search filters, inventory, and messaging logic</li>
+              <li>Designed database for offers, purchases, and user profiles</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Ruby on Rails</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <a href="https://github.com/middwinantony/calid_de_bebe" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Source
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>AI StudyBuddy</h3>
+            <p class="project-meta">Le Wagon Project • AI Engineer</p>
+            <ul class="project-highlights">
+              <li>Developed AI-generated quizzes and automatic grading based on user answers</li>
+              <li>Engineered prompt logic for topic-specific question generation</li>
+              <li>Enabled session history & progress tracking</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">Machine Learning</span>
+            </div>
+            <a href="https://github.com/middwinantony/-Studybuddy" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> View Source
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="skill-category">
-        <h3>Concepts & Patterns</h3>
-        <div class="skills-container">
-          <div class="skill-item">MVC</div>
-          <div class="skill-item">OOP</div>
-          <div class="skill-item">CRUD</div>
-          <div class="skill-item">Authentication (Devise)</div>
-          <div class="skill-item">Authorization (Pundit)</div>
-          <div class="skill-item">Turbo Streams</div>
-          <div class="skill-item">WebSockets</div>
-          <div class="skill-item">Data Structures & Algorithms</div>
-          <div class="skill-item">Machine Learning</div>
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-content">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Languages & Frameworks</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Ruby on Rails</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Stimulus</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Web & APIs</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Stripe</span>
+              <span class="skill-tag">Mapbox</span>
+              <span class="skill-tag">OpenAI</span>
+              <span class="skill-tag">Google Maps API</span>
+              <span class="skill-tag">Geocoder</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Database & Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Active Record</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Heroku</span>
+              <span class="skill-tag">Cloudinary</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Concepts & Patterns</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MVC</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">CRUD</span>
+              <span class="skill-tag">Authentication</span>
+              <span class="skill-tag">Authorization</span>
+              <span class="skill-tag">WebSockets</span>
+              <span class="skill-tag">Machine Learning</span>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="skill-category">
-        <h3>Soft Skills</h3>
-        <div class="skills-container">
-          <div class="skill-item">Problem Solving</div>
-          <div class="skill-item">Leadership</div>
-          <div class="skill-item">Technical Aptitude</div>
-          <div class="skill-item">Communication</div>
-          <div class="skill-item">French (B2)</div>
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="section-content">
+          <div class="education-card">
+            <h3>AI Software Development Bootcamp</h3>
+            <p class="education-school">Le Wagon - AI • Montreal, Canada</p>
+            <p class="education-date">2025</p>
+            <ul class="education-details">
+              <li>5-month intensive bootcamp focused on AI engineering, backend development, and deployment</li>
+              <li>Built and deployed AI-powered applications using Python, ML frameworks, APIs, and cloud tools</li>
+              <li>Hands-on experience with data pipelines, model training, evaluation, and productionization</li>
+              <li>Collaborated in agile teams on real-world, end-to-end projects</li>
+            </ul>
+          </div>
+
+          <div class="education-card">
+            <h3>Post Graduate Diploma in Data Science and Analytics</h3>
+            <p class="education-school">IIIT - Bangalore, India</p>
+            <p class="education-date">2021</p>
+          </div>
+
+          <div class="education-card">
+            <h3>Bachelor of Technology: Mechanical Engineering</h3>
+            <p class="education-school">Jawaharlal Nehru National College of Engineering, India</p>
+            <p class="education-date">2012</p>
+          </div>
+
+          <div class="education-card">
+            <h3>French Language - Level B2</h3>
+            <p class="education-school">Cégep du Vieux Montréal</p>
+            <p class="education-date">2024</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="section-content">
+          <p class="contact-intro">Feel free to reach out for collaborations, opportunities, or just to connect.</p>
+          <div class="contact-links">
+            <a href="mailto:middwin@gmail.com" class="contact-link">
+              <i class="fa fa-envelope"></i>
+              <span>middwin@gmail.com</span>
+            </a>
+            <a href="tel:+14384660214" class="contact-link">
+              <i class="fa fa-phone"></i>
+              <span>(438) 466-0214</span>
+            </a>
+            <a href="https://www.linkedin.com/in/middwin-antony-373263229/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/middwinantony" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-      <div class="project">
-        <h3>TreGo – Full-Stack Developer</h3>
-        <p class="project-type">Personal Project</p>
-        <ul>
-          <li>Ride-sharing platform with real-time location tracking and booking flow</li>
-          <li>Integrated Stripe for secure payments & Mapbox for routing</li>
-          <li>Built trip history, driver/rider UX, and UI</li>
-          <li><strong>Stack:</strong> Ruby on Rails, JavaScript, PostgreSQL, Stripe, Mapbox</li>
-        </ul>
-        <a href="https://github.com/middwinantony/trego" target="_blank" class="project-link">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>BabyHugs – Full-Stack Developer</h3>
-        <p class="project-type">Personal Project</p>
-        <ul>
-          <li>Two-sided marketplace for used baby products</li>
-          <li>Implemented search filters, inventory, and messaging logic</li>
-          <li>Designed database for offers, purchases, and user profiles</li>
-          <li><strong>Stack:</strong> Ruby on Rails, PostgreSQL, Bootstrap</li>
-        </ul>
-        <a href="https://github.com/middwinantony/calid_de_bebe" target="_blank" class="project-link">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>FriendFusion – Lead Developer</h3>
-        <p class="project-type">Le Wagon Team Project</p>
-        <ul>
-          <li>Built social platform enabling event creation, language matching, and real-time chat</li>
-          <li>Integrated AI to summarize chat conversations for faster engagement</li>
-          <li>Implemented WebSockets and ActionCable for live messaging</li>
-          <li><strong>Stack:</strong> Ruby on Rails, PostgreSQL, JavaScript, WebSockets, OpenAI API</li>
-        </ul>
-        <a href="https://www.friendfusion.online/" target="_blank" class="project-link">
-          <i class="fas fa-external-link-alt"></i> View Live Site
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>AI StudyBuddy – AI Engineer</h3>
-        <p class="project-type">Le Wagon Project</p>
-        <ul>
-          <li>Developed AI-generated quizzes and automatic grading based on user answers</li>
-          <li>Engineered prompt logic for topic-specific question generation</li>
-          <li>Enabled session history & progress tracking</li>
-        </ul>
-        <a href="https://github.com/middwinantony/-Studybuddy" target="_blank" class="project-link">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
-      </div>
-
-      <div class="project">
-        <h3>IIIT - Capstone Project - Stock Market Analysis and Portfolio Management</h3>
-        <p class="project-type">IIIT • August 2021 - November 2021</p>
-        <ul>
-          <li>Analyzed stock trends using technical analysis, focusing on risk and return metrics</li>
-          <li>Compared performance of selected securities against S&P 500 index</li>
-          <li>Applied Capital Asset Pricing Model (CAPM) to validate stock selections</li>
-          <li>Implemented predictive models to estimate portfolio returns</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <div class="experience-item">
-        <h3>Options Trader and Market Analyst</h3>
-        <p class="company">Freelance</p>
-        <p class="date">November 2021 - Present</p>
-        <ul>
-          <li>Developed comprehensive trading plans by incorporating real-time data, news, and economic indicators, adapting approaches to changing market conditions for consistent portfolio growth</li>
-          <li>Synthesized complex options pricing models and historical data to formulate risk-mitigated trading strategies aligned with shifting market volatility and liquidity patterns</li>
-          <li>Integrated statistical analysis and custom-built algorithms to backtest and validate trading hypotheses, refining execution strategies in response to evolving market dynamics</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>Analyst (Outsourced)</h3>
-        <p class="company">The Ekalaya Closet, India</p>
-        <p class="date">November 2021 - October 2022</p>
-        <ul>
-          <li>Spearheaded financial analysis initiatives, resulting in a 15% boost in profitability through data-driven insights and strategic recommendations to C-suite executives</li>
-          <li>Developed and implemented a comprehensive financial dashboard, improving operational efficiency by 21% and enabling real-time decision-making across departments</li>
-          <li>Consolidated cross-functional financial data from multiple sources to streamline monthly reporting processes, equipping leadership with timely insights for enhanced resource allocation</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>Co-founder</h3>
-        <p class="company">The Ekalaya Closet, India</p>
-        <p class="date">January 2019 - October 2020</p>
-        <ul>
-          <li>Co-founded an ethical marketplace enabling handmade artisans to sell directly at fair prices and earn sustainable income without middlemen</li>
-          <li>Built partnerships with 82 retail outlets in Bangalore, displaying artisan products and significantly expanding visibility, reach, and sales</li>
-          <li>Oversaw business operations, pricing, and financial planning to grow profitability while supporting artisan communities through affordable access to local markets</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>Analyst Lead</h3>
-        <p class="company">ServeAces Technologies, India</p>
-        <p class="date">September 2015 - November 2018</p>
-        <ul>
-          <li>Managed financial aspects of 1-2 million budget projects, performing cost-benefit analysis and financial forecasting to ensure optimal resource allocation and ROI</li>
-          <li>Developed data-driven financial models to support product pricing strategies, resulting in a 9% increase in profit margins across the product portfolio</li>
-          <li>Directed cross-functional analytical initiatives by leveraging advanced statistical techniques and business intelligence tools to identify trends, inform executive decisions, and drive comprehensive process improvements</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-
-      <div class="education-item">
-        <h3>AI Software Development Bootcamp</h3>
-        <p class="school">Le Wagon - AI • Montreal, Canada</p>
-        <p class="date">2025</p>
-        <ul>
-          <li>5-month intensive bootcamp focused on AI engineering, backend development, and deployment</li>
-          <li>Built and deployed AI-powered applications using Python, ML frameworks, APIs, and cloud tools</li>
-          <li>Hands-on experience with data pipelines, model training, evaluation, and productionization</li>
-          <li>Collaborated in agile teams on real-world, end-to-end projects</li>
-        </ul>
-      </div>
-
-      <div class="education-item">
-        <h3>Post Graduate Diploma in Data Science and Analytics</h3>
-        <p class="school">IIIT - Bangalore, India</p>
-        <p class="date">2021</p>
-      </div>
-
-      <div class="education-item">
-        <h3>Bachelor of Technology: Mechanical Engineering</h3>
-        <p class="school">Jawaharlal Nehru National College of Engineering, India</p>
-        <p class="date">2012</p>
-      </div>
-
-      <div class="education-item">
-        <h3>French Language - Level B2</h3>
-        <p class="school">Cégep du Vieux Montréal</p>
-        <p class="date">2024</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-container">
-        <a href="mailto:middwin@gmail.com"><i class="fa fa-envelope"></i> middwin@gmail.com</a>
-        <a href="tel:+14384660214"><i class="fa fa-phone"></i> (438) 466-0214</a>
-        <a href="https://www.linkedin.com/in/middwin-antony-373263229/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/middwinantony" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </section>
-
-    <footer>
-      <p>© 2025 Middwin. Built with ❤️ using HTML & CSS.</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Middwin Antony. Designed with purpose.</p>
     </footer>
 
+    <!-- JavaScript for Navigation -->
+    <script>
+      // Mobile menu toggle
+      const menuButton = document.getElementById('menu-button');
+      const navLinks = document.getElementById('nav-links');
+
+      menuButton.addEventListener('click', () => {
+        menuButton.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menuButton.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+
+      // Intersection Observer for active navigation
+      const sections = document.querySelectorAll('section[id]');
+      const navLinksAll = document.querySelectorAll('.nav-link');
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -70% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinksAll.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
